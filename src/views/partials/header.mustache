@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGINEERING PROJECT</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="/">ENGINEERING</a>
+        <form method="GET" action="/search">
+            <input type="search" name="q" placeholder="Pesquise" value="{{query}}" />
+        </form>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li class="{{#menu.all}}active{{/menu.all}}"><a href="/">Todos</a></li>
+        <li class="{{#menu.solar}}active{{/menu.solar}}"><a href="/solar">Solar</a></li>
+        <li class="{{#menu.lighting}}active{{/menu.lighting}}"><a href="/lighting">Lighting</a></li>
+        <li class="{{#menu.innovation}}active{{/menu.innovation}}"><a href="/innovation">Innovation</a></li>
+    </ul>
+</nav>

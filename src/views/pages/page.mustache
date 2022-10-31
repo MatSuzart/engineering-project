@@ -1,0 +1,23 @@
+{{>partials/header}}
+
+{{#banner}}
+<section class="banner" style="background-image: url('images/all.jpg')">{{title}}</section>
+<h2>{{title}}</h2>
+{{/banner}}
+
+<div class="container list">
+{{#list}}
+    <div class="item">
+        <img src="images/{{image}}" class="item--image" />
+        <div class="item--name">{{name}}</div>
+        <div class="item--desc">{{desc}}</div>
+    </div>
+    {{/list}}
+</div>
+{{^list}}
+    <div class="container no-list">
+    <h2>Não há produtos</h2>
+    </div>
+{{/list}}
+
+{{>partials/footer}}
